@@ -12,6 +12,7 @@
 	.app {
 		display: flex;
 		width: 75%;
+		width: 1440px;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
@@ -20,13 +21,13 @@
 	}
 	.app__header {
 		font-weight: 700;
-		margin-left: 10px;
 		width: 100%;
 	}
 	.app__content {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+		width: 1440px;
 	}
 	.app__body {
 		display: flex;
