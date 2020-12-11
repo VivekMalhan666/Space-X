@@ -1,0 +1,59 @@
+.yearPanel {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+.yearPanel__header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+.yearPanel__title {
+	font-weight: 500;
+	padding: 0;
+}
+.yearPanel__title::after {
+	content: "";
+	height: 2px;
+	display: block;
+	position: relative;
+	top: 5px !important;
+	left: -25%;
+	width: 150%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.yearPanel__years {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 300px;
+}
+.button__container {
+	display: flex;
+	flex-basis: 50%;
+	align-items: center;
+	justify-content: center;
+}
+.year__button {
+	background-color: #c5df9d;
+	color: #000000;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.year__button__active {
+	background-color: #7aba02;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+}

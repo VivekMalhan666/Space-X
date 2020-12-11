@@ -1,0 +1,88 @@
+.card__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background-color: #f2f2f2;
+	flex: 1;
+}
+
+.card {
+	margin-bottom: 40px;
+	background-color: #ffffff;
+	height: 500px;
+	min-width: 250px;
+	margin-right: 20px;
+	flex-basis: 22%;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	object-fit: contain;
+	flex-direction: column;
+}
+
+.card__image {
+	height: 200px;
+	object-fit: contain;
+	background-color: #f2f2f2;
+	margin: 25px;
+}
+.card__title {
+	color: #494c88;
+	position: sticky;
+	margin-top: -10px;
+	font-weight: 900;
+}
+
+.card__content {
+	margin: 0;
+	position: static;
+}
+.mission__list {
+	color: #484c94;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+.card__launchYear {
+	position: static;
+}
+.launch_year {
+	color: #484c94;
+}
+.card__successfulLaunch {
+	position: static;
+}
+
+@media (min-width: 700px) and (max-width: 1400px) {
+	.card {
+		flex-basis: 40%;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 700px) {
+	.card__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		scroll-behavior: smooth;
+		background-color: #f2f2f2;
+	}
+	.card {
+		margin-top: 10px;
+		flex-basis: 100%;
+		margin-bottom: 10px;
+		padding: 10px;
+		height: 320px;
+		justify-self: center;
+		align-items: center;
+	}
+	.card__image {
+		height: 100px;
+		object-fit: contain;
+		background-color: #f2f2f2;
+		margin: 25px;
+	}
+}
