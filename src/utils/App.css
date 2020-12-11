@@ -1,62 +1,145 @@
-body {
-	background-color: #f2f2f2;
-	scroll-behavior: smooth;
-	overflow-y: scroll;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-.app__header {
-	font-weight: 700;
-	margin-left: 10px;
-	margin-top: -15px;
-	width: 100%;
-}
-.app__content {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-}
-.app__body {
-	display: flex;
-	margin: 10px;
-	height: 95vh;
-	overflow-x: hidden;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.app__filter {
-	flex: 0.1;
-	margin-right: 0px;
-	width: 100%;
-}
-.app__cards {
-	flex: 0.9;
-	background-color: #ffffff;
-	margin-left: 20px;
-	width: 100%;
-}
-
-.app__footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* For Tablet View */
-@media (min-width: 961px) and (max-width: 1400px) {
-	.app__body {
-		flex-direction: row;
+@media (min-width: 1440px) {
+	body {
+		background-color: #f2f2f2;
+		scroll-behavior: smooth;
+		overflow-y: scroll;
+		width: 100%;
+		overflow-x: hidden;
 	}
+	.app__body::-webkit-scrollbar {
+		display: none;
+	}
+	.app {
+		display: flex;
+		width: 75%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.app__header {
+		font-weight: 700;
+		margin-left: 10px;
+		width: 100%;
+	}
+	.app__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.app__body {
+		display: flex;
+		height: 95vh;
+		scroll-behavior: smooth;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		justify-content: space-between;
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none;
+		width: 100%;
+	}
+
 	.app__filter {
 		flex: 0.2;
+		margin-right: 0px;
+		width: 100%;
 	}
 	.app__cards {
 		flex: 0.8;
+		background-color: #ffffff;
+		margin-left: 30px;
+		width: 100%;
+	}
+
+	.app__footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
 	}
 }
-@media (max-width: 961px) and (min-width: 820px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
+	body {
+		background-color: #f2f2f2;
+		scroll-behavior: smooth;
+		width: 99%;
+		overflow-x: hidden;
+	}
+
+	.app__header {
+		font-weight: 700;
+		margin-left: 10px;
+		margin-top: -15px;
+		width: 100%;
+	}
+	.app__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.app__body {
+		display: flex;
+		margin: 10px;
+		height: 95vh;
+		scroll-behavior: smooth;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.app__filter {
+		flex: 0.2;
+		margin-right: 0px;
+		width: 100%;
+	}
+	.app__cards {
+		flex: 0.8;
+		background-color: #ffffff;
+		margin-left: 30px;
+		width: 100%;
+	}
+
+	.app__footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
+	}
+}
+/* For Tablet View */
+
+@media (max-width: 1024px) and (min-width: 700px) {
+	body {
+		background-color: #f2f2f2;
+		scroll-behavior: smooth;
+		width: 99%;
+		overflow-x: hidden;
+	}
+
+	.app__header {
+		font-weight: 700;
+		margin-left: 10px;
+		margin-top: -15px;
+		width: 100%;
+	}
+	.app__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.app__body {
+		display: flex;
+		margin: 10px;
+		height: 95vh;
+		scroll-behavior: smooth;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		justify-content: space-between;
+		width: 100%;
+	}
+
 	.app__body {
 		flex-direction: row;
 	}
@@ -64,31 +147,47 @@ body {
 		flex: 0.25;
 	}
 	.app__cards {
-		flex: 0.75;
-	}
-}
-
-@media (max-width: 820px) and (min-width: 700px) {
-	.app__filter {
-		flex: 0.2;
-	}
-	.app__cards {
-		flex: 0.8;
+		flex: 0.7;
 	}
 }
 /* For Mobile View */
 @media (max-width: 700px) {
+	body {
+		background-color: #f2f2f2;
+		scroll-behavior: smooth;
+		width: 98%;
+		overflow-x: hidden;
+	}
+
+	.app__header {
+		font-weight: 700;
+		margin-left: 10px;
+		margin-top: -15px;
+		width: 100%;
+	}
+	.app {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
 	.app__body {
 		flex-direction: column;
 	}
 	.app__filter {
-		width: 92%;
+		max-width: 80%;
+		margin-left: auto;
 		margin-right: auto;
 	}
 	.app__cards {
-		width: 92%;
+		max-width: 80%;
 		margin-top: 10px;
+		margin-left: auto;
 		margin-right: auto;
-		height: 100vh;
+	}
+	.MuiCard-root {
+		padding-right: 0;
 	}
 }
