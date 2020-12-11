@@ -6,6 +6,7 @@ import { actionTypes } from "../StateManager/reducer";
 
 function Cards() {
 	const [{ missionData, filters, url }, dispatch] = useDataLayerValue();
+	localStorage.setItem("filter", JSON.stringify(filters));
 	useEffect(() => {
 		fetch(url)
 			.then((response) => response.json())
@@ -31,10 +32,18 @@ function Cards() {
 				newUrl += `&launch_success=false`;
 			}
 			if (filters[2] == 1) {
-				newUrl += `&landing_success=true`;
+				if (filters[1] != 1 && filters[1] != 2) {
+					newUrl += `&launch_success=true&landing_success=true`;
+				} else {
+					newUrl += `&landing_success=true`;
+				}
 			}
 			if (filters[2] == 2) {
-				newUrl += `&landing_success=false`;
+				if (filters[1] != 1 && filters[1] != 2) {
+					newUrl += `&launch_success=true&landing_success=false`;
+				} else {
+					newUrl += `&landing_success=false`;
+				}
 			}
 		}
 		console.log("New Url >>>>>>>>>>>>", newUrl);

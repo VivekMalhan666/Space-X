@@ -23,10 +23,12 @@
 	height: 2px;
 	display: block;
 	position: relative;
-	top: 5px !important;
-	left: -25%;
-	width: 150%;
-	background-color: rgba(0, 0, 0, 0.5);
+	top: 2px !important;
+	left: -10%;
+	right: auto;
+	max-width: 200px;
+	width: 120%;
+	background-color: rgba(0, 0, 0, 0.322);
 }
 .yearPanel__years {
 	display: flex;

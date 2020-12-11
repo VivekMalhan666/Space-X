@@ -3,6 +3,7 @@
 	background-color: #ffffff;
 	width: 100%;
 	flex-direction: column;
+	border-radius: 2%;
 }
 .filter__header {
 	margin-left: 10px;

@@ -37,6 +37,7 @@
 .card__content {
 	margin: 0;
 	position: static;
+	padding: 10px;
 }
 .mission__list {
 	color: #484c94;
@@ -44,17 +45,18 @@
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-top: 0;
+	margin-left: -1%;
 }
 .card__launchYear {
 	position: static;
 }
 .launch_year {
 	color: #484c94;
+	font-weight: 500;
 }
 .card__successfulLaunch {
 	position: static;
 }
-
 @media (min-width: 700px) and (max-width: 1024px) {
 	.card {
 		flex-basis: 40%;
