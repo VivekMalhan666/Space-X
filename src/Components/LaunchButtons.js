@@ -25,6 +25,10 @@ function LaunchButtons() {
 			});
 		}
 	};
+
+	useEffect(() => {
+		setSelectedId(filters[1]);
+	}, []);
 	return (
 		<div className="yearPanel__years">
 			<div key={1} className="button__container">

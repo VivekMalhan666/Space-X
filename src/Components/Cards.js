@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import "../utils/Cards.css";
 import { useDataLayerValue } from "../StateManager/DataLayer";
 import { actionTypes } from "../StateManager/reducer";
+import { act } from "react-dom/test-utils";
 
 function Cards() {
 	const [{ missionData, filters, url }, dispatch] = useDataLayerValue();
-	localStorage.setItem("filter", JSON.stringify(filters));
 	useEffect(() => {
 		fetch(url)
 			.then((response) => response.json())

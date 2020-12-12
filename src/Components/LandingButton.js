@@ -26,6 +26,9 @@ function LandingButton() {
 			});
 		}
 	};
+	useEffect(() => {
+		setSelectedId(filters[2]);
+	}, []);
 	return (
 		<div className="yearPanel__years">
 			<div key={1} className="button__container">

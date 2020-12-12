@@ -1,8 +1,12 @@
 export const initialState = {
 	missionData: [],
 	baseUrl: "https://api.spaceXdata.com/v3/launches?limit=100",
-	filters: [0, 0, 0], //[year, launch, landing],
-	url: "https://api.spaceXdata.com/v3/launches?limit=100",
+	filters: JSON.parse(localStorage.getItem("filters"))
+		? JSON.parse(localStorage.getItem("filters"))
+		: [0, 0, 0], //[year, launch, landing],
+	url: localStorage.getItem("url")
+		? localStorage.getItem("url")
+		: "https://api.spaceXdata.com/v3/launches?limit=100",
 };
 export const actionTypes = {
 	SET_URL: "SET_URL",
@@ -12,6 +16,7 @@ export const actionTypes = {
 const reducer = (state, action) => {
 	switch (action.type) {
 		case actionTypes.SET_URL:
+			localStorage.setItem("url", action.url);
 			return {
 				...state,
 				url: action.url,
@@ -22,6 +27,7 @@ const reducer = (state, action) => {
 				missionData: action.missionData,
 			};
 		case actionTypes.SET_FILTERS:
+			localStorage.setItem("filters", JSON.stringify(action.filters));
 			return {
 				...state,
 				filters: action.filters,

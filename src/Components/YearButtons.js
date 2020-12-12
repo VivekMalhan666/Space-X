@@ -34,6 +34,7 @@ function YearButtons() {
 			temp.push(i);
 		}
 		setYears(temp);
+		setSelectedYear(filters[0]);
 	}, []);
 	return (
 		<div className="yearPanel__years">
