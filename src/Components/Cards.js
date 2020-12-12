@@ -20,7 +20,6 @@ function Cards() {
 
 	useEffect(() => {
 		let newUrl = "https://api.spaceXdata.com/v3/launches?limit=100";
-		console.log(filters[1]);
 		if (new Set(filters).size != 1) {
 			if (filters[0]) {
 				newUrl += `&launch_year=${filters[0]}`;
@@ -40,13 +39,12 @@ function Cards() {
 			}
 			if (filters[2] == 2) {
 				if (filters[1] != 1 && filters[1] != 2) {
-					newUrl += `&launch_success=true&landing_success=false`;
+					newUrl += `&launch_success=false&landing_success=false`;
 				} else {
 					newUrl += `&landing_success=false`;
 				}
 			}
 		}
-		console.log("New Url >>>>>>>>>>>>", newUrl);
 		dispatch({
 			type: actionTypes.SET_URL,
 			url: newUrl,
