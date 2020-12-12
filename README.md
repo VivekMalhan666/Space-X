@@ -48,6 +48,28 @@ When the application is opened on Devices with viewport above 1440px using this 
 <br>
 <br>
 
+## Development
+
+### The following Technologies were used to develop this application
+
+    1. React js.
+    2. Custom media query to achieve responsiveness.
+    3. Material-ui Card and Buttons.
+    4. React context api(similar to react redux).
+    5. Google Search Engine Optimization.
+    6. Browser localStorage.
+
+### Key Features of the application
+
+    - Filter and combination of Filters to find the desired results.
+    - Reload retains your previous results and filters.
+    - Responsive on all devices.
+    - Lightweight and aigile for fastest performance.
+    - Simple and easy to use design.
+
+<br>
+<br>
+
 ## Installation
 
 To use the project on your own local device, Follow the steps below.
@@ -60,22 +82,28 @@ To use the project on your own local device, Follow the steps below.
 
 ### Step 1:
 
-    Clone/Download this repository in your system. Unzip the repository if you have downloaded it.
+Clone/Download this repository in your system. Unzip the repository if you have downloaded it.
 
 ### Step 2:
 
-    Open the terminal and cd to the folder of the repository.
+Open the terminal and cd to the folder of the repository.
 
 ### Step 3:
 
-    Type "npm install" in your terminal.
+Type the following command in your terminal. This will help us install all the dependencies required.
+
+    npm install
 
 ### Step 4:
 
-    Type "npm start" to host it and Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Type the command below to host the application in your localhost.
+
+    npm start
+
+Now Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Step 5:
 
-    Open the project in your desired text editor and edit it to your own liking
+Open the project in your desired text editor and edit it to your own liking
 
 <h4 align="center">This app was developed by : Vivek Malhan</hr>
