@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { useDataLayerValue } from "../StateManager/DataLayer";
 import { actionTypes } from "../StateManager/reducer";
-import "../utils/YearPanel.css";
+import "../utils/SubPanel.css";
 
 function LaunchButtons() {
 	const [selectedId, setSelectedId] = useState(null);
@@ -30,7 +30,7 @@ function LaunchButtons() {
 		setSelectedId(filters[1]);
 	}, []);
 	return (
-		<div className="yearPanel__years">
+		<div className="subPanel__years">
 			<div key={1} className="button__container">
 				<div
 					className={selectedId == 1 ? "year__button__active" : "year__button"}

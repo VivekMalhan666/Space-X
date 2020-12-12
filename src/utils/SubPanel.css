@@ -1,4 +1,4 @@
-.yearPanel {
+.subPanel {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -7,7 +7,7 @@
 	padding: 0;
 	margin-top: -4%;
 }
-.yearPanel__header {
+.subPanel__header {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -16,13 +16,13 @@
 	margin: 0;
 	font-size: large;
 }
-.yearPanel__title {
+.subPanel__title {
 	font-weight: 500;
 	padding: 0;
 
 	font-size: large;
 }
-.yearPanel__title::after {
+.subPanel__title::after {
 	content: "";
 	height: 2px;
 	display: block;
@@ -34,7 +34,7 @@
 	width: 120%;
 	background-color: rgba(0, 0, 0, 0.322);
 }
-.yearPanel__years {
+.subPanel__years {
 	display: flex;
 	flex: 1;
 	width: 100%;
@@ -64,7 +64,7 @@
 	align-items: center;
 }
 @media (max-width: 700px) {
-	.yearPanel__years {
+	.subPanel__years {
 		display: flex;
 		flex: 1;
 		width: 100%;

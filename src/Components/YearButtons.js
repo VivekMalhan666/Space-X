@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { useDataLayerValue } from "../StateManager/DataLayer";
 import { actionTypes } from "../StateManager/reducer";
-import "../utils/YearPanel.css";
+import "../utils/SubPanel.css";
 
 function YearButtons() {
 	const [years, setYears] = useState([]);
@@ -37,7 +37,7 @@ function YearButtons() {
 		setSelectedYear(filters[0]);
 	}, []);
 	return (
-		<div className="yearPanel__years">
+		<div className="subPanel__years">
 			{years.map((x) => (
 				<div key={x} className="button__container">
 					<div
