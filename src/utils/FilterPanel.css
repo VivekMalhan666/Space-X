@@ -7,12 +7,21 @@
 }
 .filter__header {
 	margin-left: 10px;
-	margin-top: 5px;
+	margin-top: 0px;
 }
-.filter__header > .filter__title {
+.filter__title {
 	margin: 0;
 }
 .filter__launchYear {
 	padding: 0;
 	margin: 0;
+}
+.MuiButton-root {
+	text-transform: none !important;
+}
+
+@media (max-width: 700px) {
+	.filter__title {
+		font-size: 24px;
+	}
 }

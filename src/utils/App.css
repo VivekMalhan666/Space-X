@@ -78,6 +78,7 @@
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+		margin-top: -2%;
 	}
 	.app__body {
 		display: flex;
@@ -98,7 +99,7 @@
 	.app__cards {
 		flex: 0.8;
 		background-color: #ffffff;
-		margin-left: 30px;
+		margin-left: 10px;
 		width: 100%;
 	}
 
@@ -129,6 +130,7 @@
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+		margin-top: -2%;
 	}
 	.app__body {
 		display: flex;
@@ -148,7 +150,7 @@
 		flex: 0.25;
 	}
 	.app__cards {
-		flex: 0.7;
+		flex: 0.75;
 	}
 }
 /* For Mobile View */
@@ -165,6 +167,8 @@
 		margin-left: 10px;
 		margin-top: -15px;
 		width: 100%;
+		margin-bottom: -4%;
+		font-size: 28px;
 	}
 	.app {
 		display: flex;
@@ -178,12 +182,12 @@
 		flex-direction: column;
 	}
 	.app__filter {
-		max-width: 80%;
+		max-width: 99%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.app__cards {
-		max-width: 80%;
+		max-width: 99%;
 		margin-top: 10px;
 		margin-left: auto;
 		margin-right: auto;

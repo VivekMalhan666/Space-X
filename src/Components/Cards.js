@@ -61,13 +61,13 @@ function Cards() {
 							className="card__image"
 						/>
 					</CardMedia>
-					<CardContent>
+					<div className="card__content">
 						<h4 className="card__title">
 							{mission.mission_name} <span>#</span>
 							{mission.flight_number}{" "}
 						</h4>
 						<div className="card__missionId">
-							<h4 className="card__content">Mission Id:</h4>
+							<h4 className="card__infoHeading">Mission Id:</h4>
 							{mission.mission_id.length != 0 ? (
 								mission.mission_id.map((mission_id) => (
 									<ul className="mission__list">
@@ -81,13 +81,13 @@ function Cards() {
 							)}
 						</div>
 						<div className="card__launchYear">
-							<h4 className="card__content">
+							<h4 className="card__infoHeading">
 								Launch Year:
 								<span className="launch_year">{mission?.launch_year}</span>
 							</h4>
 						</div>
 						<div className="card__successfulLaunch">
-							<h4 className="card__content">
+							<h4 className="card__infoHeading">
 								Successful Launch :{" "}
 								<span className="launch_year">
 									{mission?.launch_success ? "true" : "false"}
@@ -95,14 +95,14 @@ function Cards() {
 							</h4>
 						</div>
 						<div className="card__successfulLaunch">
-							<h4 className="card__content">
+							<h4 className="card__infoHeading">
 								Successful Landing :
 								<span className="launch_year">
 									{mission?.launch_success ? "true" : "false"}
 								</span>
 							</h4>
 						</div>
-					</CardContent>
+					</div>
 				</Card>
 			))}
 		</div>
