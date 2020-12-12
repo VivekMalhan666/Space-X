@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+<h1 align="center">The SpaceX Launch Program</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"><img src="public/favicon.ico"></h2>
 
-## Available Scripts
-
-In the project directory, you can run:
+This project aims to facilitate different launch programs by spacex
 
 ### `npm start`
 
