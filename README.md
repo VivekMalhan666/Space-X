@@ -6,7 +6,7 @@ The SpaceX Launch Program aims to facilitate different launch programs by spacex
 
 ### For Desktop
 
-When the application is opened on a device except phones and tablets using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches.
+When the application is opened on a desktop/laptop using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches.
 
 <img align="center" style="height:500px" alt="Laptop/Computer View" src="public/Max 1440px .png">
 
@@ -26,6 +26,24 @@ Successful and failed landing can also be viewed using the true and false button
 Not only that combination of the three filters can also be used to get a required result. Comination of launch, land and years can be applied simultaneously to obtain the required output. Example of combination of various filters can be seen below.
 
 <img align="center" style="height:363px" src="public/Combination of filters.png" alt="filter using combination">
+
+### For Tablet
+
+When the application is opened on a tablet using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches. While the overall functionality and usage remains the same as desktop.
+
+<img align="center" style="height:500px" alt="tablet View" src="public/Tablet View.png">
+
+### For Mobile
+
+When the application is opened on a Mobile using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches. While the overall functionality and usage remains the same as desktop.
+
+<img align="center" style="height:500px" alt="Mobile View" src="public/panel view mobile.png">
+
+### For Devices with viewport above 1440px
+
+When the application is opened on Devices with viewport above 1440px using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches. While the overall functionality and usage remains the same as desktop.
+
+<img align="center" style="height:500px" alt="Device with biewport above 1440px View" src="public/Above 1440px.png">
 
 <br>
 <br>
