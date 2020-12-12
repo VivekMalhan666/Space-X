@@ -1,68 +1,63 @@
-<h1 align="center">The SpaceX Launch Program</h1>
+<h1 align="center"><a href="https://space-x-2a5a0.web.app/">The SpaceX Launch Program <img src="public/favicon.ico"></a></h1>
 
-<h2 align="center"><img src="public/favicon.ico"></h2>
+The SpaceX Launch Program aims to facilitate different launch programs by spacex at one go. This application is developed to help user to get information of different spacex launches in one instance.
 
-This project aims to facilitate different launch programs by spacex
+## Usage
 
-### `npm start`
+### For Desktop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When the application is opened on a device except phones and tablets using this <a herf="https://space-x-2a5a0.web.app/">link</a>, the following view is rendered. After the page is rendered, User can scroll down through all the information about SpaceX Launches.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img align="center" style="height:500px" alt="Laptop/Computer View" src="public/Max 1440px .png">
 
-### `npm test`
+Using the buttons on the filters panel, the cards containing the filtered information is loaded.
+Here's a simple example of filtering information using year 2007 button as a filter.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img align="center" style="height:363px" src="public/Year Filter.png" alt="filter using years">
 
-### `npm run build`
+Successful and failed launches can also be viewed using the true and false button under Successful Launch heading. An example of the filtering information using success or failure of the launch can be seen below.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img align="center" style="height:363px" src="public/Launch Filter.png" alt="filter using Launch Success">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Successful and failed landing can also be viewed using the true and false button under Successful Landing heading. An example of the filtering information using success or failure of the landing can be seen below.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img align="center" style="height:363px" src="public/Landing Filter.png" alt="filter using Land Success">
 
-### `npm run eject`
+Not only that combination of the three filters can also be used to get a required result. Comination of launch, land and years can be applied simultaneously to obtain the required output. Example of combination of various filters can be seen below.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img align="center" style="height:363px" src="public/Combination of filters.png" alt="filter using combination">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To use the project on your own local device, Follow the steps below.
 
-## Learn More
+### Prerequisites :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Node Js
+    - Browser of your choice
+    - React Js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 1:
 
-### Code Splitting
+    Clone/Download this repository in your system. Unzip the repository if you have downloaded it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Step 2:
 
-### Analyzing the Bundle Size
+    Open the terminal and cd to the folder of the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Step 3:
 
-### Making a Progressive Web App
+    Type "npm install" in your terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Step 4:
 
-### Advanced Configuration
+    Type "npm start" to host it and Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Step 5:
 
-### Deployment
+    Open the project in your desired text editor and edit it to your own liking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4 align="center">This app was developed by : Vivek Malhan</hr>
