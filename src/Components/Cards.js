@@ -54,13 +54,11 @@ function Cards() {
 	return (
 		<div className="card__container">
 			{missionData.map((mission) => (
-				<Card className="card" key={mission.flight_number}>
-					<CardMedia>
-						<img
-							src={mission.links.mission_patch_small}
-							className="card__image"
-						/>
-					</CardMedia>
+				<div className="card" key={mission.flight_number}>
+					<img
+						src={mission.links.mission_patch_small}
+						className="card__image"
+					/>
 					<div className="card__content">
 						<h4 className="card__title">
 							{mission.mission_name} <span>#</span>
@@ -83,27 +81,41 @@ function Cards() {
 						<div className="card__launchYear">
 							<h4 className="card__infoHeading">
 								Launch Year:
-								<span className="launch_year">{mission?.launch_year}</span>
+								<span className="launch_year"> {mission?.launch_year}</span>
 							</h4>
 						</div>
-						<div className="card__successfulLaunch">
-							<h4 className="card__infoHeading">
-								Successful Launch :{" "}
-								<span className="launch_year">
-									{mission?.launch_success ? "true" : "false"}
-								</span>
-							</h4>
-						</div>
-						<div className="card__successfulLaunch">
-							<h4 className="card__infoHeading">
-								Successful Landing :
-								<span className="launch_year">
-									{mission?.launch_success ? "true" : "false"}
-								</span>
-							</h4>
-						</div>
+
+						<table className="card__successfulLaunch">
+							<tbody>
+								<tr style={{ padding: 0 }}>
+									<td className="card__infoHeading">
+										<h4 className="card__infoTitle">Successful Launch: </h4>
+									</td>
+									<td>
+										<h4 className="launch_success">
+											{mission?.launch_success ? " true" : " false"}
+										</h4>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table className="card__successfulLaunch">
+							<tbody>
+								<tr style={{ padding: 0 }}>
+									<td className="card__infoHeading">
+										<h4 className="card__infoTitle">Successful Landing: </h4>
+									</td>
+									<td>
+										<h4 className="launch_success">
+											{mission?.launch_success ? " true" : " false"}
+										</h4>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-				</Card>
+				</div>
 			))}
 		</div>
 	);

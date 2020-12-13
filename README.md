@@ -54,7 +54,7 @@ When the application is opened on Devices with viewport above 1440px using this 
 
     1. React js.
     2. Custom media query to achieve responsiveness.
-    3. Material-ui Card and Buttons.
+    3. Material-ui Buttons.
     4. React context api(similar to react redux).
     5. Google Search Engine Optimization.
     6. Browser localStorage.
@@ -106,4 +106,4 @@ Now Open [http://localhost:3000](http://localhost:3000) to view it in the browse
 
 Open the project in your desired text editor and edit it to your own liking
 
-<h4 align="center">This app was developed by : Vivek Malhan</hr>
+<h4 align="center">This app was developed by : Vivek Malhan</h4>

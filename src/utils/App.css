@@ -2,12 +2,8 @@
 	body {
 		background-color: #f2f2f2;
 		scroll-behavior: smooth;
-		overflow-y: scroll;
-		width: 100%;
+		width: 99%;
 		overflow-x: hidden;
-	}
-	.app__body::-webkit-scrollbar {
-		display: none;
 	}
 	.app {
 		display: flex;
@@ -22,6 +18,8 @@
 	.app__header {
 		font-weight: 700;
 		width: 100%;
+		margin-bottom: -10px;
+		margin-top: -10px;
 	}
 	.app__content {
 		display: flex;
@@ -31,12 +29,7 @@
 	}
 	.app__body {
 		display: flex;
-		height: 95vh;
-		scroll-behavior: smooth;
-		overflow-y: scroll;
-		overflow-x: hidden;
 		justify-content: space-between;
-		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none;
 		width: 100%;
 	}
@@ -57,14 +50,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		bottom: 0;
 	}
 }
 @media (max-width: 1440px) and (min-width: 1024px) {
 	body {
 		background-color: #f2f2f2;
 		scroll-behavior: smooth;
-		width: 99%;
+		width: 100%;
 		overflow-x: hidden;
 	}
 
@@ -83,10 +75,7 @@
 	.app__body {
 		display: flex;
 		margin: 10px;
-		height: 95vh;
-		scroll-behavior: smooth;
-		overflow-y: scroll;
-		overflow-x: hidden;
+		margin-top: 15px;
 		justify-content: space-between;
 		width: 100%;
 	}
@@ -116,7 +105,7 @@
 	body {
 		background-color: #f2f2f2;
 		scroll-behavior: smooth;
-		width: 99%;
+		width: 100%;
 		overflow-x: hidden;
 	}
 
@@ -135,22 +124,23 @@
 	.app__body {
 		display: flex;
 		margin: 10px;
-		height: 95vh;
-		scroll-behavior: smooth;
-		overflow-y: scroll;
-		overflow-x: hidden;
 		justify-content: space-between;
 		width: 100%;
-	}
-
-	.app__body {
 		flex-direction: row;
 	}
+
 	.app__filter {
 		flex: 0.25;
 	}
 	.app__cards {
 		flex: 0.75;
+	}
+
+	.app__footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
 	}
 }
 /* For Mobile View */
@@ -158,7 +148,7 @@
 	body {
 		background-color: #f2f2f2;
 		scroll-behavior: smooth;
-		width: 98%;
+		width: 100%;
 		overflow-x: hidden;
 	}
 
@@ -168,7 +158,7 @@
 		margin-top: -15px;
 		width: 100%;
 		margin-bottom: -4%;
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.app {
 		display: flex;
@@ -181,6 +171,7 @@
 	.app__body {
 		flex-direction: column;
 	}
+
 	.app__filter {
 		max-width: 99%;
 		margin-left: auto;
@@ -192,7 +183,11 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.MuiCard-root {
-		padding-right: 0;
+
+	.app__footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
 	}
 }

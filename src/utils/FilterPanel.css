@@ -4,10 +4,11 @@
 	width: 100%;
 	flex-direction: column;
 	border-radius: 2%;
+	padding-bottom: 30px;
 }
 .filter__header {
 	margin-left: 10px;
-	margin-top: 0px;
+	margin-top: 10px;
 }
 .filter__title {
 	margin: 0;
